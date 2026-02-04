@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — ProductHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="products.html">ProductHub</a>
+      <nav class="nav">
+        <a href="index.html">Recipes</a>
+        <a href="products.html">Products</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="left-controls">
+        <input id="search" type="search" placeholder="Search products, brands, categories..." aria-label="Search">
+        <select id="filter">
+          <option value="all">All Categories</option>
+        </select>
+      </div>
+      <div class="right-controls">
+        <select id="sort">
+          <option value="relevance">Sort: Relevance</option>
+          <option value="title-asc">Title A → Z</option>
+          <option value="title-desc">Title Z → A</option>
+          <option value="price-asc">Price Low → High</option>
+          <option value="price-desc">Price High → Low</option>
+          <option value="rating-desc">Rating High → Low</option>
+        </select>
+        <button id="layoutGrid" class="btn-toggle active">Grid</button>
+        <button id="layoutList" class="btn-toggle">List</button>
+      </div>
+    </section>
+
+    <section id="cards" class="cards-grid" aria-live="polite">
+      <div class="placeholder">Loading products…</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Simple demo — client-side only (no server)</div>
+  </footer>
+
+  <script src="products-app.js"></script>
+</body>
+</html>

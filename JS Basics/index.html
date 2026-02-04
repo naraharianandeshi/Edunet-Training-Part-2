@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="index.html">RecipeCards</a>
+            <nav class="nav">
+        <a href="index.html">Recipes</a>
+        <a href="products.html">Products</a>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <div class="left-controls">
+                <input id="search" type="search" placeholder="Search recipes or ingredients..." aria-label="Search">
+                <select id="filter">
+                    <option value="all">All Cuisines</option>
+                </select>
+            </div>
+            <div class="right-controls">
+                <select id="sort">
+                    <option value="relevance">Sort: Relevance</option>
+                    <option value="title-asc">Title A → Z</option>
+                    <option value="title-desc">Title Z → A</option>
+                    <option value="id-desc">Newest</option>
+                    <option value="id-asc">Oldest</option>
+                </select>
+                <button id="layoutGrid" class="btn-toggle active">Grid</button>
+                <button id="layoutList" class="btn-toggle">List</button>
+            </div>
+        </section>
+
+        <section id="cards" class="cards-grid" aria-live="polite">
+            <div class="placeholder">Loading recipes…</div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">Simple demo — client-side only (no server)</div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

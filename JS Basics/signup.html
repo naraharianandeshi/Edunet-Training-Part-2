@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sign Up — RecipeCards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">RecipeCards</a>
+      <nav class="nav">
+        <a href="index.html">Recipes</a>
+        <a href="products.html">Products</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="auth-wrap">
+      <h2>Create account</h2>
+      <form id="signupForm">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" required>
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input id="password" type="password" required>
+        </div>
+        <div class="form-row">
+          <button class="btn" type="submit">Sign Up</button>
+        </div>
+        <div class="muted">Already have an account? <a href="login.html">Login</a></div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('signupForm');
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const users = JSON.parse(localStorage.getItem('users')||'[]');
+      if(users.find(u=>u.email===email)){
+        alert('Account already exists with this email');
+        return;
+      }
+      users.push({name,email,password});
+      localStorage.setItem('users', JSON.stringify(users));
+      alert('Account created — please login');
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>
