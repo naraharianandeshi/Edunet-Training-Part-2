@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ product.title }} - Fashion{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="product-detail">
+      <div>
+        {% if product.image_url %}
+          <img src="{{ product.image_url }}" alt="{{ product.title }}" style="width:100%;border-radius:0;box-shadow:0 8px 32px rgba(0,0,0,0.12)">
+        {% else %}
+          <img src="https://images.unsplash.com/photo-1503387762915-48e887dc9da9?w=600&h=800&fit=crop" alt="{{ product.title }}" style="width:100%;border-radius:0;box-shadow:0 8px 32px rgba(0,0,0,0.12)">
+        {% endif %}
+      </div>
+      <div class="product-info" style="background:#fff;padding:3rem;border:1px solid #eee;border-radius:0">
+        <h1 style="margin:0 0 1.5rem;font-size:2.2rem;letter-spacing:1px">{{ product.title }}</h1>
+        <p class="price" style="font-size:2rem;margin:0 0 2rem;letter-spacing:0.5px">&#36;{{ product.price }}</p>
+        <p style="color:#666;line-height:1.8;margin:0 0 2.5rem;font-size:1rem">{{ product.description }}</p>
+        <button style="background:#1a1a1a;color:#d4af37;border:2px solid #1a1a1a;padding:1.2rem 2.5rem;border-radius:0;font-size:1rem;font-weight:600;cursor:pointer;width:100%;transition:all .3s ease;letter-spacing:1px">ADD TO CART</button>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ category.name }} - Fashion{% endblock %}
+
+{% block content %}
+  <section class="categories">
+    <div class="container">
+      <div style="margin-bottom:3rem">
+        <h2 style="font-size:2.8rem;margin:0;letter-spacing:2px">{{ category.name|upper }} COLLECTION</h2>
+        <p style="color:#666;margin:.5rem 0 0;font-size:1.1rem">Explore our exclusive selection</p>
+      </div>
+      <div class="grid featured">
+        {% for p in products %}
+          <a class="card" href="{{ p.get_absolute_url }}">
+            {% if p.image_url %}
+              <img src="{{ p.image_url }}" alt="{{ p.title }}">
+            {% else %}
+              {% if forloop.counter0 == 0 %}
+                <img src="https://images.unsplash.com/photo-1503387762915-48e887dc9da9?w=500&h=600&fit=crop" alt="{{ p.title }}">
+              {% elif forloop.counter0 == 1 %}
+                <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=500&h=600&fit=crop" alt="{{ p.title }}">
+              {% elif forloop.counter0 == 2 %}
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&h=600&fit=crop" alt="{{ p.title }}">
+              {% else %}
+                <img src="https://images.unsplash.com/photo-1506202594657-445cea688996?w=500&h=600&fit=crop" alt="{{ p.title }}">
+              {% endif %}
+            {% endif %}
+            <div class="card-body">
+              <h3>{{ p.title }}</h3>
+              <p class="price">${{ p.price }}</p>
+            </div>
+          </a>
+        {% empty %}
+          <p style="text-align:center;padding:3rem;color:#666;grid-column:1/-1;font-size:1.1rem">No products in this collection yet.</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}

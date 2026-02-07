@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Fashion{% endblock %}
+
+{% block content %}
+    <section class="hero">
+        <h1>LUXURY FASHION</h1>
+        <p class="lead">Discover Timeless Elegance & Contemporary Style</p>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2>OUR COLLECTIONS</h2>
+            <div class="grid">
+                <a class="card" href="/category/kids/">
+                    <img src="https://images.unsplash.com/photo-1503387762915-48e887dc9da9?w=600&h=600&fit=crop" alt="Kids Collection">
+                    <div class="card-body">
+                        <h3>KIDS</h3>
+                        <p>Stylish & Comfortable</p>
+                    </div>
+                </a>
+                <a class="card" href="/category/women/">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&h=600&fit=crop" alt="Women Collection">
+                    <div class="card-body">
+                        <h3>WOMEN</h3>
+                        <p>Elegant & Sophisticated</p>
+                    </div>
+                </a>
+                <a class="card" href="/category/men/">
+                    <img src="https://images.unsplash.com/photo-1591047990458-38ab08800249?w=600&h=600&fit=crop" alt="Men Collection">
+                    <div class="card-body">
+                        <h3>MEN</h3>
+                        <p>Classic & Modern</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <h2>FEATURED PRODUCTS</h2>
+            <div class="grid featured">
+                <a class="card" href="#">
+                    <img src="https://images.unsplash.com/photo-1540932424986-e06ebc957a23?w=500&h=600&fit=crop" alt="Jacket">
+                    <div class="card-body">
+                        <h3>Premium Jacket</h3>
+                        <p class="price">$299.99</p>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <img src="https://images.unsplash.com/photo-1557804506-669714d2e9d8?w=500&h=600&fit=crop" alt="Dress">
+                    <div class="card-body">
+                        <h3>Evening Dress</h3>
+                        <p class="price">$449.99</p>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <img src="https://images.unsplash.com/photo-1528322271087-79a01a33ac77?w=500&h=600&fit=crop" alt="T-Shirt">
+                    <div class="card-body">
+                        <h3>Cotton T-Shirt</h3>
+                        <p class="price">$79.99</p>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <img src="https://images.unsplash.com/photo-1506202594657-445cea688996?w=500&h=600&fit=crop" alt="Pants">
+                    <div class="card-body">
+                        <h3>Tailored Pants</h3>
+                        <p class="price">$199.99</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
