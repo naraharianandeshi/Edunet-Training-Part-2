@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - MyBlog</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-feather-alt"></i> MyBlog
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h1>Get In Touch</h1>
+            <p>I'd love to hear from you. Let's start a conversation!</p>
+        </section>
+
+        <!-- CONTACT INFO & FORM -->
+        <section style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; max-width: 1200px; margin: 2rem auto; padding: 0 2rem;">
+            <!-- CONTACT INFORMATION -->
+            <div style="background: white; border-radius: 10px; padding: 2rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                <h2 style="margin-bottom: 2rem;">Contact Information</h2>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: #3498db; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-map-marker-alt"></i> Location
+                    </h3>
+                    <p style="color: #7f8c8d; margin-left: 2rem;">
+                        San Francisco, California<br>
+                        United States
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: #3498db; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-envelope"></i> Email
+                    </h3>
+                    <p style="color: #7f8c8d; margin-left: 2rem;">
+                        <a href="mailto:hello@myblog.com">hello@myblog.com</a>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: #3498db; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-phone"></i> Phone
+                    </h3>
+                    <p style="color: #7f8c8d; margin-left: 2rem;">
+                        <a href="tel:+1234567890">+1 (234) 567-8900</a>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: #3498db; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-clock"></i> Response Time
+                    </h3>
+                    <p style="color: #7f8c8d; margin-left: 2rem;">
+                        I typically respond to emails within 24-48 hours.<br>
+                        For urgent matters, please call directly.
+                    </p>
+                </div>
+
+                <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #ecf0f1;">
+                    <h3 style="margin-bottom: 1.5rem;">Follow Me</h3>
+                    <div class="social-links" style="justify-content: flex-start;">
+                        <a href="https://twitter.com" target="_blank" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <div style="background: white; border-radius: 10px; padding: 2rem; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                <h2 style="margin-bottom: 2rem;">Send Me a Message</h2>
+                
+                <!-- IMPORTANT: Replace 'YOUR_FORMSPREE_ID' with your actual Formspree ID -->
+                <!-- To get your Formspree ID: 1. Go to formspree.io 2. Sign up 3. Create a new form 4. Copy your endpoint -->
+                <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" name="contact">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="phone" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label style="display: flex; align-items: center; font-weight: normal; gap: 0.5rem;">
+                            <input type="checkbox" name="subscribe" value="yes" style="width: auto;">
+                            Subscribe to my newsletter for updates
+                        </label>
+                    </div>
+
+                    <div class="form-group submit">
+                        <input type="submit" value="Send Message">
+                    </div>
+
+                    <p style="font-size: 0.85rem; color: #7f8c8d; text-align: center; margin-top: 1rem;">
+                        I'll get back to you as soon as possible. Thank you for reaching out!
+                    </p>
+                </form>
+            </div>
+        </section>
+
+        <!-- FREQUENTLY ASKED QUESTIONS -->
+        <section class="container">
+            <h2>Frequently Asked Questions</h2>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-left: 4px solid #3498db; border-radius: 5px;">
+                    <h3 style="color: #2d3e50; margin-bottom: 0.5rem; cursor: pointer;">
+                        <i class="fas fa-chevron-right"></i> What services do you offer?
+                    </h3>
+                    <p style="color: #7f8c8d; margin-left: 1.5rem;">
+                        I offer web development services including front-end development, UI/UX design, 
+                        responsive website design, and JavaScript development. I also provide consulting 
+                        for web performance optimization and accessibility.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-left: 4px solid #3498db; border-radius: 5px;">
+                    <h3 style="color: #2d3e50; margin-bottom: 0.5rem; cursor: pointer;">
+                        <i class="fas fa-chevron-right"></i> How long does a typical project take?
+                    </h3>
+                    <p style="color: #7f8c8d; margin-left: 1.5rem;">
+                        Project timelines vary depending on scope and complexity. A simple website might take 
+                        2-4 weeks, while more complex applications could take 2-3 months or longer. I'll provide 
+                        a detailed timeline after our initial consultation.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-left: 4px solid #3498db; border-radius: 5px;">
+                    <h3 style="color: #2d3e50; margin-bottom: 0.5rem; cursor: pointer;">
+                        <i class="fas fa-chevron-right"></i> Do you work with startups and small businesses?
+                    </h3>
+                    <p style="color: #7f8c8d; margin-left: 1.5rem;">
+                        Absolutely! I love working with startups and small businesses. I understand budget constraints 
+                        and can work with you to create solutions that deliver maximum value. Let's discuss your specific needs.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-left: 4px solid #3498db; border-radius: 5px;">
+                    <h3 style="color: #2d3e50; margin-bottom: 0.5rem; cursor: pointer;">
+                        <i class="fas fa-chevron-right"></i> What is your availability?
+                    </h3>
+                    <p style="color: #7f8c8d; margin-left: 1.5rem;">
+                        I'm currently available for new projects. I typically take on 1-2 projects at a time to 
+                        ensure quality and attention to detail. Feel free to reach out to discuss your project timeline.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-left: 4px solid #3498db; border-radius: 5px;">
+                    <h3 style="color: #2d3e50; margin-bottom: 0.5rem; cursor: pointer;">
+                        <i class="fas fa-chevron-right"></i> Do you provide ongoing support?
+                    </h3>
+                    <p style="color: #7f8c8d; margin-left: 1.5rem;">
+                        Yes! I offer post-launch support and maintenance packages. Whether you need bug fixes, 
+                        feature updates, or ongoing optimization, I'm here to help keep your website running smoothly.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="hero" style="background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); margin-top: 3rem;">
+            <h1 style="color: white;">Ready to Work Together?</h1>
+            <p style="color: rgba(255,255,255,0.9);">Let's discuss your project and how I can help bring your ideas to life.</p>
+            <div class="hero-buttons">
+                <a href="#" onclick="document.querySelector('textarea').focus()" class="btn btn-outline">Start the Conversation</a>
+                <a href="../index.html" class="btn btn-secondary">Back to Home</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 MyBlog. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <p style="font-size: 0.9rem; margin-top: 1rem; color: #bdc3c7;">
+            Designed with <i class="fas fa-heart" style="color: #e74c3c;"></i> by Your Name | Powered by HTML, CSS & JavaScript
+        </p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - MyBlog</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-feather-alt"></i> MyBlog
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h1>My Blog</h1>
+            <p>Insights, stories, and lessons from my journey in web development</p>
+        </section>
+
+        <!-- SEARCH AND FILTER -->
+        <section class="container" style="text-align: center; margin-bottom: 2rem;">
+            <input type="text" id="searchInput" placeholder="Search blog posts..." 
+                   style="width: 100%; max-width: 400px; padding: 0.8rem; border: 2px solid #bdc3c7; border-radius: 5px; font-size: 1rem;">
+            <p style="margin-top: 1rem; color: #7f8c8d;">
+                <span id="postCount">9</span> articles · Filter by tags or search by title
+            </p>
+        </section>
+
+        <!-- BLOG POSTS -->
+        <section class="container">
+            <!-- Post 1 -->
+            <article class="blog-post" id="post1">
+                <span class="blog-date"><i class="fas fa-calendar"></i> February 8, 2026</span>
+                <h3>Getting Started with Web Development in 2026</h3>
+                <p style="color: #7f8c8d; margin-bottom: 0.5rem;">
+                    <i class="fas fa-tags"></i> 
+                    <span style="display: inline-block; background: #3498db; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Web Development</span>
+                    <span style="display: inline-block; background: #2980b9; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Beginner Guide</span>
+                </p>
+                <p class="blog-excerpt">
+                    In this comprehensive guide, I'll walk you through the essentials of modern web development. 
+                    From HTML and CSS fundamentals to advanced JavaScript concepts, you'll learn everything you need 
+                    to start your journey as a web developer. Whether you're a complete beginner or looking to refresh 
+                    your knowledge, this article covers the basics and best practices.
+                </p>
+                <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1rem;">
+                    <i class="fas fa-clock"></i> 8 min read
+                </p>
+                <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="blog-post" id="post2">
+                <span class="blog-date"><i class="fas fa-calendar"></i> February 5, 2026</span>
+                <h3>The Art of Responsive Web Design</h3>
+                <p style="color: #7f8c8d; margin-bottom: 0.5rem;">
+                    <i class="fas fa-tags"></i> 
+                    <span style="display: inline-block; background: #e74c3c; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">CSS</span>
+                    <span style="display: inline-block; background: #c0392b; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Design</span>
+                </p>
+                <p class="blog-excerpt">
+                    Mobile devices have become the primary way people access the internet. In this post, I explore 
+                    the principles of responsive design and how to create websites that work beautifully on all devices. 
+                    Learn about media queries, flexible grids, and flexible images that make your website accessible 
+                    to everyone. I'll also share some real-world examples and best practices.
+                </p>
+                <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1rem;">
+                    <i class="fas fa-clock"></i> 12 min read
+                </p>
+                <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="blog-post" id="post3">
+                <span class="blog-date"><i class="fas fa-calendar"></i> January 30, 2026</span>
+                <h3>CSS Tricks and Tips for Modern Designers</h3>
+                <p style="color: #7f8c8d; margin-bottom: 0.5rem;">
+                    <i class="fas fa-tags"></i> 
+                    <span style="display: inline-block; background: #27ae60; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">CSS</span>
+                    <span style="display: inline-block; background: #229954; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Tips & Tricks</span>
+                </p>
+                <p class="blog-excerpt">
+                    CSS has evolved tremendously over the years. In this article, I share some of my favorite CSS tricks 
+                    and tips that will help you write cleaner, more efficient stylesheets. From CSS Grid to Flexbox, 
+                    CSS Variables to advanced selectors, discover techniques that will level up your design game.
+                </p>
+                <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1rem;">
+                    <i class="fas fa-clock"></i> 10 min read
+                </p>
+                <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <!-- Post 4 -->
+            <article class="blog-post" id="post4">
+                <span class="blog-date"><i class="fas fa-calendar"></i> January 25, 2026</span>
+                <h3>Mastering JavaScript: From Basics to Advanced Concepts</h3>
+                <p style="color: #7f8c8d; margin-bottom: 0.5rem;">
+                    <i class="fas fa-tags"></i> 
+                    <span style="display: inline-block; background: #3498db; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">JavaScript</span>
+                    <span style="display: inline-block; background: #2980b9; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Tutorial</span>
+                </p>
+                <p class="blog-excerpt">
+                    JavaScript is the heart of interactive web applications. This detailed guide covers everything from 
+                    variables and functions to closures, promises, and async/await. Learn how to write clean, efficient 
+                    JavaScript code that powers modern web applications. Includes practical examples and common pitfalls to avoid.
+                </p>
+                <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1rem;">
+                    <i class="fas fa-clock"></i> 15 min read
+                </p>
+                <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <!-- Post 5 -->
+            <article class="blog-post" id="post5">
+                <span class="blog-date"><i class="fas fa-calendar"></i> January 20, 2026</span>
+                <h3>Building Scalable Web Applications with React</h3>
+                <p style="color: #7f8c8d; margin-bottom: 0.5rem;">
+                    <i class="fas fa-tags"></i> 
+                    <span style="display: inline-block; background: #61dafb; color: #282c34; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">React</span>
+                    <span style="display: inline-block; background: #282c34; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Architecture</span>
+                </p>
+                <p class="blog-excerpt">
+                    React has become one of the most popular JavaScript libraries for building user interfaces. 
+                    Learn how to build scalable, maintainable React applications following best practices. 
+                    We'll cover component architecture, state management, hooks, and performance optimization techniques 
+                    that professional teams use in production applications.
+                </p>
+                <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1rem;">
+                    <i class="fas fa-clock"></i> 14 min read
+                </p>
+                <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <!-- Post 6 -->
+            <article class="blog-post" id="post6">
+                <span class="blog-date"><i class="fas fa-calendar"></i> January 15, 2026</span>
+                <h3>Web Performance Optimization: Making Your Site Lightning Fast</h3>
+                <p style="color: #7f8c8d; margin-bottom: 0.5rem;">
+                    <i class="fas fa-tags"></i> 
+                    <span style="display: inline-block; background: #f39c12; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Performance</span>
+                    <span style="display: inline-block; background: #d68910; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Optimization</span>
+                </p>
+                <p class="blog-excerpt">
+                    Site speed is critical for user experience and SEO. In this comprehensive guide, I'll show you 
+                    how to optimize every aspect of your site's performance. From image optimization to code splitting, 
+                    caching strategies to lazy loading, discover the techniques that can make your site significantly faster.
+                </p>
+                <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1rem;">
+                    <i class="fas fa-clock"></i> 11 min read
+                </p>
+                <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <!-- Post 7 -->
+            <article class="blog-post" id="post7">
+                <span class="blog-date"><i class="fas fa-calendar"></i> January 10, 2026</span>
+                <h3>Understanding REST APIs and Building Your Own</h3>
+                <p style="color: #7f8c8d; margin-bottom: 0.5rem;">
+                    <i class="fas fa-tags"></i> 
+                    <span style="display: inline-block; background: #9b59b6; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Backend</span>
+                    <span style="display: inline-block; background: #8e44ad; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">APIs</span>
+                </p>
+                <p class="blog-excerpt">
+                    REST APIs are fundamental to modern web development. This article explores the principles of 
+                    RESTful design and guides you through building a robust API using Node.js and Express. 
+                    Learn about HTTP methods, status codes, authentication, and best practices for API design.
+                </p>
+                <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1rem;">
+                    <i class="fas fa-clock"></i> 13 min read
+                </p>
+                <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <!-- Post 8 -->
+            <article class="blog-post" id="post8">
+                <span class="blog-date"><i class="fas fa-calendar"></i> January 5, 2026</span>
+                <h3>Web Accessibility: Making Your Site Inclusive for Everyone</h3>
+                <p style="color: #7f8c8d; margin-bottom: 0.5rem;">
+                    <i class="fas fa-tags"></i> 
+                    <span style="display: inline-block; background: #e74c3c; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Accessibility</span>
+                    <span style="display: inline-block; background: #c0392b; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Best Practices</span>
+                </p>
+                <p class="blog-excerpt">
+                    Web accessibility is not optional—it's a responsibility. Learn how to build websites that are 
+                    accessible to everyone, including people with disabilities. We'll cover WCAG guidelines, semantic HTML, 
+                    ARIA attributes, keyboard navigation, and testing your site for accessibility.
+                </p>
+                <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1rem;">
+                    <i class="fas fa-clock"></i> 9 min read
+                </p>
+                <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+            </article>
+
+            <!-- Post 9 -->
+            <article class="blog-post" id="post9">
+                <span class="blog-date"><i class="fas fa-calendar"></i> December 30, 2025</span>
+                <h3>2026 Web Development Trends to Watch</h3>
+                <p style="color: #7f8c8d; margin-bottom: 0.5rem;">
+                    <i class="fas fa-tags"></i> 
+                    <span style="display: inline-block; background: #3498db; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Trends</span>
+                    <span style="display: inline-block; background: #2980b9; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; margin: 0.25rem; font-size: 0.9rem;">Future Tech</span>
+                </p>
+                <p class="blog-excerpt">
+                    As we step into 2026, the web development landscape continues to evolve. This article explores 
+                    the emerging trends and technologies that will shape web development this year. From AI-powered tools 
+                    to new frameworks and browser capabilities, discover what's next in the world of web development.
+                </p>
+                <p style="color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1rem;">
+                    <i class="fas fa-clock"></i> 7 min read
+                </p>
+                <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+            </article>
+        </section>
+
+        <!-- PAGINATION -->
+        <section class="container text-center" style="margin-top: 3rem;">
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <button class="btn btn-outline" style="border-color: #3498db; color: #3498db; background: transparent; cursor: pointer;">← Previous</button>
+                <span class="btn" style="background: #3498db; color: white;">1</span>
+                <span class="btn" style="background: transparent; color: #3498db; cursor: pointer;">2</span>
+                <span class="btn" style="background: transparent; color: #3498db; cursor: pointer;">3</span>
+                <button class="btn btn-outline" style="border-color: #3498db; color: #3498db; background: transparent; cursor: pointer;">Next →</button>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="container" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; text-align: center; margin-top: 3rem;">
+            <h2 style="color: white; border-bottom-color: white;">Subscribe to My Newsletter</h2>
+            <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem;">Get weekly articles and insights delivered to your inbox. No spam, just great content.</p>
+            
+            <div class="contact-container">
+                <form style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <input type="email" placeholder="Enter your email" style="flex: 1; min-width: 200px; padding: 0.8rem; border: none; border-radius: 5px;" required>
+                    <button type="submit" class="btn btn-secondary" style="white-space: nowrap;">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 MyBlog. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <p style="font-size: 0.9rem; margin-top: 1rem; color: #bdc3c7;">
+            Designed with <i class="fas fa-heart" style="color: #e74c3c;"></i> by Your Name | Powered by HTML, CSS & JavaScript
+        </p>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        // Blog search functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('searchInput');
+            const blogPosts = document.querySelectorAll('.blog-post');
+            const postCount = document.getElementById('postCount');
+
+            searchInput.addEventListener('keyup', function(e) {
+                const searchTerm = e.target.value.toLowerCase();
+                let visibleCount = 0;
+
+                blogPosts.forEach(post => {
+                    const title = post.querySelector('h3').textContent.toLowerCase();
+                    const excerpt = post.querySelector('.blog-excerpt').textContent.toLowerCase();
+                    
+                    if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+                        post.style.display = 'block';
+                        visibleCount++;
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+
+                postCount.textContent = visibleCount || '0';
+            });
+        });
+    </script>
+</body>
+</html>

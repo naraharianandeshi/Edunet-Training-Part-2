@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog - Welcome to My Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-feather-alt"></i> MyBlog
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About Me</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h1>Welcome to My Blog</h1>
+            <p>Exploring ideas, sharing insights, and documenting my journey</p>
+            <div class="hero-buttons">
+                <a href="pages/blog.html" class="btn btn-primary">Read Blog Posts</a>
+                <a href="pages/about.html" class="btn btn-outline">Learn About Me</a>
+                <a href="pages/contact.html" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </section>
+
+        <!-- FEATURED SECTION -->
+        <section class="container">
+            <h2>Featured Content</h2>
+            <p>Discover my latest thoughts and projects</p>
+            
+            <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <i class="fas fa-pen-fancy" style="font-size: 2.5rem; color: #3498db; margin-bottom: 1rem;"></i>
+                    <h3>Latest Articles</h3>
+                    <p>Stay updated with my recent blog posts covering web development, design trends, and tech insights. Each article is carefully crafted to provide value and inspiration.</p>
+                    <a href="pages/blog.html" class="read-more">
+                        View All Articles <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <i class="fas fa-user-circle" style="font-size: 2.5rem; color: #e74c3c; margin-bottom: 1rem;"></i>
+                    <h3>About Me</h3>
+                    <p>Learn more about my background, experience, and the skills I've developed over the years. I'm passionate about creating beautiful and functional digital experiences.</p>
+                    <a href="pages/about.html" class="read-more">
+                        Read My Story <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <i class="fas fa-envelope" style="font-size: 2.5rem; color: #27ae60; margin-bottom: 1rem;"></i>
+                    <h3>Get In Touch</h3>
+                    <p>Have a project in mind or just want to say hello? I'd love to hear from you. Drop me a message and let's start a conversation.</p>
+                    <a href="pages/contact.html" class="read-more">
+                        Send Message <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECENT POSTS PREVIEW -->
+        <section class="container">
+            <h2>Recent Blog Posts</h2>
+            
+            <div class="blog-post">
+                <span class="blog-date">February 8, 2026</span>
+                <h3>Getting Started with Web Development in 2026</h3>
+                <p class="blog-excerpt">
+                    In this comprehensive guide, I'll walk you through the essentials of modern web development. 
+                    From HTML and CSS fundamentals to advanced JavaScript concepts, you'll learn everything you need 
+                    to start your journey as a web developer. Whether you're a complete beginner or looking to refresh 
+                    your knowledge, this article covers the basics and best practices.
+                </p>
+                <a href="pages/blog.html#post1" class="read-more">
+                    Read Full Article <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="blog-post">
+                <span class="blog-date">February 5, 2026</span>
+                <h3>The Art of Responsive Web Design</h3>
+                <p class="blog-excerpt">
+                    Mobile devices have become the primary way people access the internet. In this post, I explore 
+                    the principles of responsive design and how to create websites that work beautifully on all devices. 
+                    Learn about media queries, flexible grids, and flexible images that make your website accessible 
+                    to everyone.
+                </p>
+                <a href="pages/blog.html#post2" class="read-more">
+                    Read Full Article <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="blog-post">
+                <span class="blog-date">January 30, 2026</span>
+                <h3>CSS Tricks and Tips for Modern Designers</h3>
+                <p class="blog-excerpt">
+                    CSS has evolved tremendously over the years. In this article, I share some of my favorite CSS tricks 
+                    and tips that will help you write cleaner, more efficient stylesheets. From CSS Grid to Flexbox, 
+                    CSS Variables to advanced selectors, discover techniques that will level up your design game.
+                </p>
+                <a href="pages/blog.html#post3" class="read-more">
+                    Read Full Article <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="text-center mt-2">
+                <a href="pages/blog.html" class="btn btn-primary">View All Articles</a>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER SECTION -->
+        <section class="container" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; text-align: center;">
+            <h2 style="color: white; border-bottom-color: white;">Subscribe to My Newsletter</h2>
+            <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem;">Get the latest articles and insights delivered to your inbox. No spam, just great content.</p>
+            
+            <div class="contact-container">
+                <form style="display: flex; gap: 1rem;">
+                    <input type="email" placeholder="Enter your email" style="flex: 1; padding: 0.8rem; border: none; border-radius: 5px;" required>
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 MyBlog. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com" target="_blank" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <p style="font-size: 0.9rem; margin-top: 1rem; color: #bdc3c7;">
+            Designed with <i class="fas fa-heart" style="color: #e74c3c;"></i> by Your Name | Powered by HTML, CSS & JavaScript
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
