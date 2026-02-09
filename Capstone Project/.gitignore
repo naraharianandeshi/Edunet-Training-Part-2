@@ -1,0 +1,39 @@
+# NodeJS
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build & Dist
+dist/
+build/
+*.min.js
+*.min.css
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Optional: Keep .md files in git (comment out if you want to ignore them)
+# *.md
+
+# Optional: Keep assets uploaded
+# assets/
+
+# Backup files
+*.bak
+*.backup
